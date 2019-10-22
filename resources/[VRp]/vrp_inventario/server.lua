@@ -140,7 +140,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
     if vRPclient.isInComa(player) then
         TriggerClientEvent("Notify",player,"negado","Você está em coma.",1)
     else
-        if type == "drink" or type == "food" or type == "heal" or type == "weapon" or type == "ammo" or type == "mochila" or type == "colete" or type == "maconha" or type == "cocaina"or type == "metanfetamina" or type == "vodka" or type == "money" or type == "energetico" or type == "capuz" or type == "bandagem" or type == "documento" then
+        if type == "drink" or type == "food" or type == "heal" or type == "weapon" or type == "ammo" or type == "mochila" or type == "armor" or type == "maconha" or type == "cocaina"or type == "metanfetamina" or type == "vodka" or type == "money" or type == "energetico" or type == "capuz" or type == "bandagem" or type == "documento" then
             if type == "bandagem" then
                 vida = vRPclient.getHealth(player)
                 if vida > 100 and vida < 400 then
