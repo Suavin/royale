@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate|Unica+One');
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+body, html {
+	overflow-y: hidden;
+}
+/* main.css */
+
+button {
+	background: rgba(20,20,20,0.95);
+	background-position: center;
+    width: 10%;
+    height: 4%;
+    left: 6%;
+    left: 3%;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	margin-top: 5px;
+	text-align: center;
+	border-radius: 3px;
+	letter-spacing: 0.5px;
+	text-shadow: 1px 1px #000;
+	padding: 0 20px;
+	border-bottom: 1px solid rgba(5,5,5,0.9);
+}
+
+.general{
+    /*background-image: url('img/phone.png');*/
+	background-repeat: no-repeat;
+	font-family: 'Unica One', cursive;
+	background-size: 500px 500px;
+	width: 500px; 
+	height: 500px; 
+	position: absolute;
+
+	top: 25%;
+	left: 30%;
+
+}
+h1{
+	font-family: 'Unica One', cursive;
+	color: black;
+	position: relative;
+	left: 48%;
+	top: 39%;
+}
+h3{
+	position: absolute;
+	left: 40.2%;
+	bottom: 55%;
+	 background-color:  white;
+	  font-size: 12px;
+	 opacity: 0.1;
+	 border-radius: 5px;
+}
+.b{
+	
+	font-family: 'Unica One', cursive;
+	color: black;
+	position: relative;
+	left: 30%;
+	top: 30%;
+}
+
+input[type=text] {
+	position: relative;
+    top: 50px;
+    left: 180px;
+    
+	font-family: 'Unica One';
+    width: 40%;
+    height: 8%;
+    padding: 5px 5px;
+    margin: 40px 0;
+    box-sizing: border-box;
+ 
+	
+}
+
+button:hover{
+	background-color: black;
+	opacity: 1.0;
+}
+
+#Agua:hover{
+	opacity:1.0
+	}
+	#Dourado:hover{
+		opacity:1.0
+		}
+		#Cerveja:hover{
+			opacity:1.0
+			}
+			#Taco:hover{
+				opacity:1.0
+				}
+				#Vodka:hover{
+					opacity:1.0
+					}
+					#Donut:hover{
+						opacity:1.0
+						}
+						#Conhaque:hover{
+							opacity:1.0
+							}
+							#DonutX:hover{
+								opacity:1.0
+								}
+								#Whisky:hover{
+									opacity:1.0
+									}
+									#Hamburguer:hover{
+										opacity:1.0
+										}
+										#Tequila:hover{
+											opacity:1.0
+											}
+											#HotDog:hover{
+												opacity:1.0
+												}
+												#Leite:hover{
+													opacity:1.0
+													}
+												    #DonutXX:hover{
+														opacity:1.0
+														}
+														#Salmao:hover{
+															opacity:1.0
+															}
+															#Sair:hover{
+																opacity:1.0
+																}
+															
+															

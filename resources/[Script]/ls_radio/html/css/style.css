@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    font-family: sans-serif;
+    overflow: hidden;
+    display: none;
+    top: 0;
+}
+
+/*
+.radio {
+ background-image: url("../img/radio.png");
+ background-repeat: no-repeat;
+ background-size: auto;
+ background-attachment: fixed;
+
+}
+*/
+
+#cursor {
+    position: absolute;
+    z-index: 999999;
+    display: none;
+}
+
+#radio {
+  width: 367px;
+  height: 795px;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+
+#onoff {
+  position: absolute;
+  top: 32%;
+  right: 0;
+  padding: 40px 40px;
+  opacity: .0;
+}
+
+.onoff button {
+ padding: 10px 25px;
+ background: rgb(0,255,0);
+ opacity: .0;
+}
+
+.ekran {
+  position: absolute;
+  padding: 95px 100px;
+  top: 71%;
+  left: 22.5%;
+}
+
+.channel {
+  position: absolute;
+  top: -80%;
+  left: 33%;
+  width: 85px;
+  height: 105px;
+}
+
+.channel span {
+  text-align: center;
+  width: 85px;
+  height: 105px;
+}
+
+.channel input {
+  text-align: center;
+  border: none;
+  background: rgba(0,0,0,.0);
+  font-size: 70px;
+  width: 85px;
+  height: 105px;
+}
