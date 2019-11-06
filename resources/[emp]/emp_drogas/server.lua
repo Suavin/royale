@@ -18,7 +18,7 @@ local quantidade = {}
 function emP.Quantidade()
 	local source = source
 	if quantidade[source] == nil then
-		quantidade[source] = math.random(1,3)
+		quantidade[source] = math.random(1)
 	end
 end
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -29,8 +29,8 @@ function emP.checkItens()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		 if not vRP.hasPermission(user_id,"trafico.permissao") and not vRP.hasPermission(user_id,"policia.permissao")then
-			return vRP.getInventoryItemAmount(user_id,"maconha") or vRP.getInventoryItemAmount(user_id,"cocaina") or vRP.getInventoryItemAmount(user_id,"metanfetamina") >= quantidade[source]
+		 if not vRP.hasPermission(user_id,"trafico.permissao") and not vRP.hasPermission(user_id,"policia.permissao") and not vRP.hasPermission(user_id,"paramedico.permissao") then
+			return vRP.getInventoryItemAmount(user_id,"pack") >= quantidade[source]
 		 end
 	end
 end
@@ -42,10 +42,10 @@ function emP.checkPayment()
 	local user_id = vRP.getUserId(source)
 	if user_id then
 		local policia = vRP.getUsersByPermission("policia.permissao")
-		if vRP.tryGetInventoryItem(user_id,"maconha",quantidade[source]) or vRP.tryGetInventoryItem(user_id,"cocaina",quantidade[source]) or vRP.tryGetInventoryItem(user_id,"metanfetamina",quantidade[source]) then
-			vRP.giveInventoryItem(user_id,"dinheirosujo",math.random(150,250)*quantidade[source]+(#policia*50))
+		if vRP.tryGetInventoryItem(user_id,"pack",quantidade[source]) then
+			vRP.giveInventoryItem(user_id,"dinheirosujo",math.random(1000,1170)*quantidade[source]+(#policia*50))
 			vRPclient._playAnim(source,true,{{"mp_common","givetake1_a"}},false)
-			TriggerClientEvent("Notify",source,"sucesso","Venda realizada $"..math.random(550,675)*quantidade[source]+(#policia*50).." Dolares marcados recebidos")
+			TriggerClientEvent("Notify",source,"sucesso","Venda realizada $"..math.random(1000,1410)*quantidade[source]+(#policia*50).." Dolares marcados recebidos")
 			quantidade[source] = nil
 		end
 	end
@@ -65,7 +65,7 @@ function emP.MarcarOcorrencia()
 					local id = idgens:gen()
 					blips[id] = vRPclient.addBlip(player,x,y,z,153,84,"Ocorrência",0.5,false)
 					vRPclient._playSound(player,"CONFIRM_BEEP","HUD_MINI_GAME_SOUNDSET")
-					TriggerClientEvent('chatMessage',player,"190",{65,130,255},"Recebemos uma denuncia de drogas, verifique o ocorrido.")
+					TriggerClientEvent('chatMessage',player,"190",{65,130,255},"Recebemos uma denuncia do tráfico de drogas, verifique o ocorrido.")
 					SetTimeout(15000,function() vRPclient.removeBlip(player,blips[id]) idgens:free(id) end)
 				end)
 			end

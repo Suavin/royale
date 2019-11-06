@@ -106,7 +106,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
 		if nocauteado then
 			if timedeath > 0 then
-				drawTxt("VOCE TEM ~r~"..timedeath.." ~w~SEGUNDOS DE VIDA, CHAME OS PARAMEDICOS",4,0.5,0.93,0.50,255,255,255,255)
+				drawTxt("VOCE TEM ~r~"..timedeath.." ~w~SEGUNDOS DE VIDA, AGUARDE OS PARAMEDICOS",4,0.5,0.93,0.50,255,255,255,255)
 			else
 				drawTxt("PRESSIONE ~g~E ~w~PARA VOLTAR AO HOSPITAL OU AGUARDE UM PARAMÉDICO",4,0.5,0.93,0.50,255,255,255,255)
 			end
@@ -143,6 +143,10 @@ Citizen.CreateThread(function()
 			DisableControlAction(0,167,true)
 			DisableControlAction(0,177,true)
 			DisableControlAction(0,344,true)
+			DisableControlAction(0,207,true)
+			DisableControlAction(0,137,true)
+			DisableControlAction(0,171,true)
+			DisableControlAction(0,217,true)
 			DisableControlAction(0,29,true)
 			DisableControlAction(0,182,true)
 			DisableControlAction(0,168,true)

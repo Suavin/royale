@@ -23,9 +23,9 @@ function func.checkJewelry(x,y,z,h,sec,tipo)
 	local user_id = vRP.getUserId(source)
 	local policia = vRP.getUsersByPermission("policia.permissao")
 	if user_id then
-		if #policia < 0 then
+		if #policia < 6 then
 			TriggerClientEvent("Notify",source,"aviso","Número insuficiente de policiais no momento.")
-		elseif (os.time()-timers) <= 3600 then
+		elseif (os.time()-timers) <= 43600 then
 			TriggerClientEvent("Notify",source,"aviso","A Ammu Nation não se recuperou do ultimo roubo, aguarde <b>"..vRP.format(parseInt((3600-(os.time()-timers)))).." segundos</b> até que o sistema seja restaurado.")
 		else
 			if vRP.getInventoryItemAmount(user_id,"pendrive") >= 1 and not roubando then

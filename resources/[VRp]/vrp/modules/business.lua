@@ -80,8 +80,8 @@ end
 local function build_client_business(source)
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		vRPclient._addMarker(source,20,-576.86639404297,286.91256713867,79.17658996582-0.95,2,2,0.5,236,2,0,50,100)
-		vRP.setArea(source,"vRP:business",-576.86639404297,286.91256713867,79.17658996582,2,2,business_enter,business_leave)
+		vRPclient._addMarker(source,20,92.428611755371,-1291.7967529297,29.268743515015-0.95,2,2,0.5,236,2,0,50,100)
+		vRP.setArea(source,"vRP:business",92.428611755371,-1291.7967529297,29.268743515015,2,2,business_enter,business_leave)
 	end
 end
 

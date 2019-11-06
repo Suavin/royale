@@ -48,10 +48,19 @@ local carros = {
 	["baller"] = { price = 150000 },
 	["primo2"] = { price = 230000 },
 	["jester"] = { price = 270000 },
+	["chino2"] = { price = 280000 },
 	["contender"] = { price = 320000 },
+	["buccaneer2"] = { price = 320000 },
+	["voodoo"] = { price = 340000 },
 	["sultan"] = { price = 360000 },
+	["baller3"] = { price = 420000 },
 	["omnis"] = { price = 450000 },
+	["sultanrs"] = { price = 460000 },
 	["elegy"] = { price = 560000 },
+	["dubsta3"] = { price = 720000 },
+	["turismo2"] = { price = 880000 },
+	["baller5"] = { price = 960000 },
+	["toros"] = { price = 960000 },
 -----------------MOTOS----------------------
 	["faggio"] = { price = 14000 },
 	["faggio3"] = { price = 12000 },
@@ -64,13 +73,17 @@ local carros = {
 	["sovereign"] = { price = 140000 },
 	["bati"] = { price = 260000 },
 	["bf400"] = { price = 350000 },
+	["carbonrs"] = { price = 430000 },
 	["nightblade"] = { price = 650000 },
 	["hakuchou"] = { price = 760000 },
+	["hakuchou2"] = { price = 820000 },
 	["akuma"] = { price = 950000 },
+	["sanctus"] = { price = 1350000 },
 -----------------IMPORT---------------------
 	["lamborghinihuracan"] = { price = 3600000 },
+	["nissangtr"] = { price = 3500000 },
 	["ferrariitalia"] = { price = 3400000 },
-	["nissanskyliner34"] = { price = 3600000 },
+	["nissanskyliner34"] = { price = 4300000 },
 -----------------Pegasus------------------
 	["raptor"] = { price = 550000 },
 	["havok"] = { price = 1800000 },
@@ -79,11 +92,12 @@ local carros = {
 -----------------VIPS---------------------
 	["audirs6"] = { price = 0 },
 	["s3sedan"] = { price = 0 },
+	["nisy"] = { price = 0 },
 	["500x"] = { price = 0 },
 	["rampage10"] = { price = 0 },
-	["toyotasupra"] = { price = 0 },
-	["nissan370z"] = { price = 0 },
-	["bmwm3f80"] = { price = 0 }
+	["toyotasupra"] = { price = 1000000 },
+	["nissan370z"] = { price = 1000000 },
+	["bmwm3f80"] = { price = 1000000 }
 }
 
 local idveh = {}

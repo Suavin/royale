@@ -187,7 +187,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('id',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"admin.permissao") then
+	if vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"wl.permissao") then
 		if args[1] then
 			local nplayer = vRP.getUserSource(parseInt(args[1]))
 			if nplayer == nil then
@@ -252,7 +252,7 @@ AddEventHandler("vrp_policia:algemar",function()
 				end)
 			end
 		else
-			if vRP.hasPermission(user_id,"policia.permissao") then
+			if vRP.hasPermission(user_id,"policia.permissao") or vRP.hasPermission(user_id,"mod.permissao") then
 				if vRPclient.isHandcuffed(nplayer) then
 					vRPclient.toggleHandcuff(nplayer)
 					TriggerClientEvent("vrp_sound:source",source,'uncuff',0.1)
@@ -284,7 +284,7 @@ RegisterServerEvent("vrp_policia:carregar")
 AddEventHandler("vrp_policia:carregar",function()
 	local source = source
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"polpar.permissao") then
+	if vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"wl.permissao") then
 		local nplayer = vRPclient.getNearestPlayer(source,10)
 		if nplayer then
 			TriggerClientEvent('carregar',nplayer,source)
@@ -361,7 +361,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('cv',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"polpar.permissao") then
+	if vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"mod.permissao") then
 		local nplayer = vRPclient.getNearestPlayer(source,10)
 		if nplayer then
 			vRPclient.putInNearestVehicleAsPassenger(nplayer,7)
@@ -373,7 +373,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('rv',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"polpar.permissao") then
+	if vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"mod.permissao") then
 		local nplayer = vRPclient.getNearestPlayer(source,10)
 		if nplayer then
 			vRPclient.ejectVehicle(nplayer)
@@ -457,6 +457,7 @@ local itemlist = {
 	"wbody|WEAPON_MUSKET",
 	"wbody|WEAPON_GUSENBERG",
 	"wbody|WEAPON_ASSAULTSMG",
+	"wbody|WEAPON_STICKYBOMB",
 	"wbody|WEAPON_COMBATPDW",
 	"wammo|WEAPON_DAGGER",
 	"wammo|WEAPON_BAT",
@@ -734,8 +735,23 @@ local presets = {
 			[11] = { 118,0 },
 			[9] = { 12,1 },
 			[10] = { -1,0 },
-			["p0"] = { 10,0 },
 			["p1"] = { 5,5 },
+			["p2"] = { -1,0 },
+			["p6"] = { -1,0 },
+			["p7"] = { -1,0 }
+		},
+		[-1667301416] = {
+			[1] = { 121,0 },
+			[5] = { -1,0 },
+			[7] = { -1,0 },
+			[3] = { 14,0 },
+			[4] = { 41,0 },
+			[8] = { 35,0 },
+			[6] = { 59,1 },
+			[11] = { 25,0 },
+			[9] = { 14,0 },
+			[10] = { -1,0 },
+			["p1"] = { 7,1 },
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
 			["p7"] = { -1,0 }
@@ -752,7 +768,6 @@ local presets = {
 			[11] = { 94,1 },
 			[9] = { 7,1 },
 			[10] = { -1,0 },
-			["p0"] = { 33,1 },
 			["p1"] = { -1,0 },
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
@@ -762,14 +777,13 @@ local presets = {
 			[1] = { 121,0 },
 			[5] = { -1,0 },
 			[7] = { 95,0 },
-			[3] = { 14,0 },
-			[4] = { 49,0 },
+			[3] = { 20,0 },
+			[4] = { 49,1 },
 			[8] = { 34,0 },
 			[6] = { 57,0 },
-			[11] = { 84,0 },
+			[11] = { 85,0 },
 			[9] = { -1,0 },
 			[10] = { -1,0 },
-			["p0"] = { 95,0 },
 			["p1"] = { -1,0 },
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
@@ -782,7 +796,7 @@ local presets = {
 			[3] = {30,0,0},
 			[4] = {49,3},
 			[5] = {48,0,0},	
-			[6] = {24,0,0},
+			[6] = {25,0,0},
 			[7] = {1,0,0},	
 			[8] = {15,0,0},
 			[9] = {7,1},
@@ -792,15 +806,65 @@ local presets = {
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
 			["p7"] = { -1,0 }
+		},
+		[-1667301416] = {
+			[1] = { 121,0 },
+			[5] = { -1,0 },
+			[7] = { 95,0 },
+			[3] = { 20,0 },
+			[4] = { 50,0 },
+			[8] = { 1,0 },
+			[6] = { 52,0 },
+			[11] = { 85,1 },
+			[9] = { 6,4 },
+			[10] = { -1,0 },
+			["p1"] = { -1,0 },
+			["p2"] = { -1,0 },
+			["p6"] = { -1,0 },
+			["p7"] = { -1,0 }
 		}
 	},
 	["5"] = {
+		[1885233650] = {
+			[1] = { -1,0 },
+			[5] = { -1,0 },
+			[7] = { 127,0 },
+			[3] = { 74,0 },
+			[4] = { 71,0 },
+			[8] = { 15,0 },
+			[6] = { 9,0 },
+			[11] = { 16,1 },
+			[9] = { -1,0 },
+			[10] = { -1,0 },
+			["p1"] = { -1,0 },
+			["p2"] = { -1,0 },
+			["p6"] = { -1,0 },
+			["p7"] = { -1,0 }
+		},
+		[-1667301416] = {
+			[1] = { -1,0 },
+			[5] = { -1,0 },
+			[7] = { 97,0 },
+			[3] = { 96,0 },
+			[4] = { 52,2 },
+			[8] = { 15,0 },
+			[6] = { 27,0 },
+			[11] = { 141,1 },
+			[9] = { -1,0 },
+			[10] = { -1,0 },
+			["p1"] = { -1,0 },
+			["p2"] = { -1,0 },
+			["p6"] = { -1,0 },
+			["p7"] = { -1,0 }
+		}
+	},
+	["6"] = {
 		[1885233650] = {
 			[1] = { 121,0 },
 			[5] = { -1,0 },
 			[7] = { 126,0 },
 			[3] = { 74,0 },
-			[4] = { 96,0 },
+			[4] = { 71,0 },
 			[8] = { 57,0 },
 			[6] = { 56,1 },
 			[11] = { 250,0 },
@@ -817,47 +881,12 @@ local presets = {
 			[5] = { -1,0 },
 			[7] = { 96,0 },
 			[3] = { 96,0 },
-			[4] = { 99,0 },
+			[4] = { 52,2 },
 			[8] = { 34,0 },
 			[6] = { 27,0 },
 			[11] = { 258,0 },
 			[9] = { -1,0 },
 			[10] = { 66,0 },
-			["p0"] = { 121,0 },
-			["p1"] = { -1,0 },
-			["p2"] = { -1,0 },
-			["p6"] = { -1,0 },
-			["p7"] = { -1,0 }
-		}
-	},
-	["6"] = {
-		[1885233650] = {
-			[1] = { -1,0 },
-			[5] = { -1,0 },
-			[7] = { 127,0 },
-			[3] = { 74,0 },
-			[4] = { 3,3 },
-			[8] = { 15,0 },
-			[6] = { 9,0 },
-			[11] = { 16,1 },
-			[9] = { -1,0 },
-			[10] = { -1,0 },
-			["p1"] = { -1,0 },
-			["p2"] = { -1,0 },
-			["p6"] = { -1,0 },
-			["p7"] = { -1,0 }
-		},
-		[-1667301416] = {
-			[1] = { -1,0 },
-			[5] = { -1,0 },
-			[7] = { 97,0 },
-			[3] = { 96,0 },
-			[4] = { 3,13 },
-			[8] = { 15,0 },
-			[6] = { 10,1 },
-			[11] = { 141,1 },
-			[9] = { -1,0 },
-			[10] = { -1,0 },
 			["p1"] = { -1,0 },
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
@@ -870,10 +899,10 @@ local presets = {
 			[5] = { -1,0 },
 			[7] = { 126,0 },
 			[3] = { 81,0 },
-			[4] = { 10,0 },
+			[4] = { 71,0 },
 			[8] = { 57,0 },
 			[6] = { 56,1 },
-			[11] = { 95,1 },
+			[11] = { 95,0 },
 			[9] = { -1,0 },
 			[10] = { 58,0 },
 			["p0"] = { -1,0 },
@@ -889,7 +918,7 @@ local presets = {
 			[3] = { 106,1 },
 			[4] = { 52,2 },
 			[8] = { 34,0 },
-			[6] = { 7,0 },
+			[6] = { 27,0 },
 			[11] = { 86,1 },
 			[9] = { -1,0 },
 			[10] = { 66,0 },
@@ -906,7 +935,7 @@ local presets = {
 			[5] = { -1,0 },
 			[7] = { 126,0 },
 			[3] = { 38,0 },
-			[4] = { 96,0 },
+			[4] = { 71,0 },
 			[8] = { 71,3 },
 			[6] = { 56,1 },
 			[11] = { 249,0 },
@@ -923,17 +952,36 @@ local presets = {
 			[5] = { -1,0 },
 			[7] = { 96,0 },
 			[3] = { 18,0 },
-			[4] = { 99,0 },
+			[4] = { 52,2 },
 			[8] = { 77,3 },
-			[6] = { 7,0 },
+			[6] = { 27,0 },
 			[11] = { 257,0 },
 			[9] = { -1,0 },
 			[10] = { 65,0 },
 			["p0"] = { -1,0 },
-			["p1"] = { 21,0 },
 			["p2"] = { -1,0 },
 			["p6"] = { -1,0 },
 			["p7"] = { -1,0 }
+		}
+	},
+	["9"] = {
+		[1885233650] = {
+			[7] = { 126,0 },
+			[3] = {81,0,2},
+			[4] = { 71,0 },
+			[6] = {20,3,2},
+			[8] = { 15,0 },
+			[11] = {234,4,2},
+			["p0"] = {-1,0}
+		},
+		[-1667301416] = {
+			[7] = { 96,0 },
+			[3] = {86,0},
+			[4] = { 27,0 },
+			[6] = {27,0},
+			[8] = { 38,0 },
+			[11] = {57,7},
+			["p0"] = {-1,0}
 		}
 	}
 }

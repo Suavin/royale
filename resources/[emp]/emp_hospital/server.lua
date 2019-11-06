@@ -10,7 +10,7 @@ function emP.checkServices()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		local paramedicos = vRP.getUsersByPermission("paramedico.permissao")
+		local paramedicos = vRP.getUsersByPermission("haha.permissao")
 		if parseInt(#paramedicos) == 0 then
 			return true
 		end

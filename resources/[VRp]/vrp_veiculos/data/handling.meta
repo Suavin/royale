@@ -1280,20 +1280,20 @@
 			<fInitialDragCoeff value="8.0" />
 			<fPercentSubmerged value="85.0" />
 			<vecCentreOfMassOffset x="0.0" y="-0.1" z="0.0" />
-			<vecInertiaMultiplier x="1.0" y="1.0" z="1.3" />
+			<vecInertiaMultiplier x="1.0" y="1.0" z="1.1" />
 			<fDriveBiasFront value="0.5" />
 			<nInitialDriveGears value="5" />
-			<fInitialDriveForce value="0.46" />
+			<fInitialDriveForce value="0.47" />
 			<fDriveInertia value="1.0" />
 			<fClutchChangeRateScaleUpShift value="1.8" />
 			<fClutchChangeRateScaleDownShift value="1.8" />
-			<fInitialDriveMaxFlatVel value="280.0" />
+			<fInitialDriveMaxFlatVel value="330.0" />
 			<fBrakeForce value="9.0" />
-			<fBrakeBiasFront value="2.65" />
-			<fHandBrakeForce value="2.6" />
+			<fBrakeBiasFront value="1.65" />
+			<fHandBrakeForce value="1.6" />
 			<fSteeringLock value="40.0" />
-			<fTractionCurveMax value="3.85" />
-			<fTractionCurveMin value="3.65" />
+			<fTractionCurveMax value="2.85" />
+			<fTractionCurveMin value="2.65" />
 			<fTractionCurveLateral value="22.5" />
 			<fTractionSpringDeltaMax value="0.15" />
 			<fLowSpeedTractionLossMult value="1.0" />
@@ -1306,9 +1306,9 @@
 			<fSuspensionUpperLimit value="0.1" />
 			<fSuspensionLowerLimit value="-0.1" />
 			<fSuspensionRaise value="0.0" />
-			<fSuspensionBiasFront value="0.5" />
+			<fSuspensionBiasFront value="0.46" />
 			<fAntiRollBarForce value="0.9" />
-			<fAntiRollBarBiasFront value="0.61" />
+			<fAntiRollBarBiasFront value="0.6" />
 			<fRollCentreHeightFront value="0.34" />
 			<fRollCentreHeightRear value="0.34" />
 			<fCollisionDamageMult value="0.7" />

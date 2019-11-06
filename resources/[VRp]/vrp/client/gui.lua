@@ -402,9 +402,21 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 Config = {}
 Config.WeaponList = {
-	"WEAPON_KNUCKLERDUSTER",
+	"WEAPON_KNUCKLE",
+	"WEAPON_KNIFE",
+    "WEAPON_DAGGER",
+    "WEAPON_MACHETE",
+    "WEAPON_WRENCH",
+    "WEAPON_HAMMER",
 	"WEAPON_BAT",
 	"WEAPON_GOLFCLUB",
+	"WEAPON_CROWBAR",
+	"WEAPON_HATCHET",
+	"WEAPON_FLASHLIGHT",
+	"WEAPON_BOTTLE",
+	"WEAPON_BATTLEAXE",
+	"WEAPON_POOLCUE",
+	"WEAPON_STONE_HATCHET",
 	"WEAPON_PISTOL",
 	"WEAPON_PISTOL_MK2",
 	"WEAPON_COMBATPISTOL",

@@ -8,13 +8,14 @@ cfg.items = {
 	----------------------------------------------
 	["encomenda"] = { "Encomenda",1.5 },
 	["sacodelixo"] = { "Saco de Lixo",2 },
-	["garrafavazia"] = { "Garrafa Vazia",0.2 },
 	["garrafadeleite"] = { "Garrafa de Leite",0.5 },
 	["tora"] = { "Tora de Madeira",0.6 },
 	["orgao"] = { "Órgão",1.2 },
 	----------------------------------------------
 	["isca"] = { "Isca",0.6 },
+	["camarao"] = { "Camarãozinho",0.5 },
 	["mochila"] = { "Mochila",1 },
+	["garrafavazia"] = { "Garrafa Vazia",0.2 },
 	["roupas"] = { "Roupas",1.5 },
 	["alianca"] = { "Aliança",0 },
 	["cerveja"] = { "Cerveja",0.7 },
@@ -23,13 +24,15 @@ cfg.items = {
 	["whisky"] = { "Whisky",0.7 },
 	["conhaque"] = { "Conhaque",0.7 },
 	["absinto"] = { "Absinto",0.7 },
-	["militec"] = { "Militec-1",0.8 },
+	["militec"] = { "Oléo de Motor",5.0 },
 	["repairkit"] = { "Kit de Reparos",10 },
 	----------------------------------------------
 	["dinheirosujo"] = { "Dinheiro Sujo",0 },
+	["pack"] = { "Pack de Drogas",1.5 },
 	["algemas"] = { "Algemas",1 },
 	["capuz"] = { "Capuz",0.5 },
 	["colete"] = { "Colete",5 },
+	["alicate"] = { "Alicate",1.5 },
 	["lockpick"] = { "Lockpick",10 },
 	["masterpick"] = { "Masterpick",10 },
 	["placa"] = { "Placa",0.8 },
@@ -57,14 +60,24 @@ cfg.items = {
 	["tilapia"] = { "Tilápia",1.5 },
 	["tucunare"] = { "Tucunaré",5 },
 	["lambari"] = { "Lambari",0.5 },
-	--------------------------------
+	----------------------------------------------
+	["atum"] = { "Atum",15 },
+	["espada"] = { "Peixe Espada",8 },
+	["xareu"] = { "Xareu",3 },
+	["tubarao"] = { "Tubarão",15 },
+	["bicuda"] = { "Bicuda",2 },
+	["marlim"] = { "Marlim Azul",5 },
+	["tainha"] = { "Tainha",5 },
+	["pampo"] = { "Pampo",0.5 },
+	["nero"] = { "Peixe Nero",50 },
+	----------------------------------------------
 	["toclonecards"] = { "Cartão",0.25 },
     ["clonedcards"] = { "Cartão Clonado",0.35 },
-	--------------------------------
+	----------------------------------------------
 	["adubo"] = { "Adubo",0.8 },
 	["fertilizante"] = { "Fertilizante",0.8 },
 	["maconha"] = { "Maconha",0.5 },
-    --------------------------------
+	----------------------------------------------
 	["reagentesdemeta"] = { "Reagentes De Metanfetamina",0.8 },
 	["preparodemeta"] = { "Preparo De Metanfetamina",0.8 },
 	["metanfetamina"] = { "Metanfetamina",0.5 },
@@ -72,16 +85,17 @@ cfg.items = {
 	["reagentesdecoca"] = { "Reagentes De Cocaina",0.8 },
 	["preparodecoca"] = { "Preparo De Cocaina",0.8 },
 	["cocaina"] = { "Cocaina",0.5 },
-	--------------------------------
+	----------------------------------------------
 	["capsula"] = { "Cápsula",0.01 },
 	["polvora"] = { "Pólvora",0.005 },
 	["ferro"] = { "Ferro",0.01 },
 	["carbono"] = { "Carbono",0.01 },
 	["aco"] = { "Aço",0.005 },
-	--------------------------------
+	----------------------------------------------
 	["relogioroubado"] = { "Relógio Roubado",0.3 },
 	["pulseiraroubada"] = { "Pulseira Roubada",0.2 },
 	["anelroubado"] = { "Anel Roubado",0.2 },
+	["diamante"] = { "Diamante",0.3 },
 	["colarroubado"] = { "Colar Roubado",0.2 },
 	["brincoroubado"] = { "Brinco Roubado",0.2 },
 	["carteiraroubada"] = { "Carteira Roubada",0.2 },

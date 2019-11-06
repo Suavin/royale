@@ -11,6 +11,9 @@ local valores = {
 	{ item = "masterpick", quantidade = 1, compra = 45000, venda = 25000 },
 	{ item = "pendrive", quantidade = 1, compra = 10000, venda = 17500 },
 	{ item = "colete", quantidade = 1, compra = 15000, venda = 8000 },
+	{ item = "alicate", quantidade = 1, compra = 5000, venda = 2500 },
+	{ item = "wbody|WEAPON_STICKYBOMB", quantidade = 1, compra = 45000, venda = 22500 },
+	{ item = "wammo|WEAPON_STICKYBOMB", quantidade = 1, compra = 20000, venda = 10000 },
 	{ item = "placa", quantidade = 1, compra = 5000, venda = 2500 }
 }
 -----------------------------------------------------------------------------------------------------------------------------------------

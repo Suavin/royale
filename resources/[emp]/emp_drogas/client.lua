@@ -28,13 +28,13 @@ Citizen.CreateThread(function()
 							pedlist[npc] = true
 							porcentagem = math.random(100)
 
-							if porcentagem >= 1 and porcentagem <= 85 then
+							if porcentagem >= 1 and porcentagem <= 68 then
 								segundos = 10
-							elseif porcentagem >= 86 and porcentagem <= 93 then
+							elseif porcentagem >= 69 and porcentagem <= 89 then
 								segundos = -1
 								selectnpc = nil
 								emP.MarcarOcorrencia()
-							elseif porcentagem >= 94 then
+							elseif porcentagem >= 90 then
 								segundos = -1
 								selectnpc = nil
 								emP.MarcarOcorrencia()
@@ -54,7 +54,7 @@ Citizen.CreateThread(function()
 								Citizen.Wait(10)
 							until not selectnpc
 
-							if porcentagem >= 1 and porcentagem <= 85 and segundos == 0 then
+							if porcentagem >= 1 and porcentagem <= 68 and segundos == 0 then
 								emP.checkPayment()
 							end
 

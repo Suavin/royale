@@ -26,8 +26,14 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("contrabando-comprar","masterpick")
 	elseif data == "utilidades-comprar-pendrive" then
 		TriggerServerEvent("contrabando-comprar","pendrive")
-	elseif data == "utilidades-comprar-rebite" then
+	elseif data == "utilidades-comprar-c4" then
+		TriggerServerEvent("contrabando-comprar","wbody|WEAPON_STICKYBOMB")
+	elseif data == "utilidades-comprar-c4m" then
+		TriggerServerEvent("contrabando-comprar","wammo|WEAPON_STICKYBOMB")
+	elseif data == "utilidades-comprar-colete" then
 		TriggerServerEvent("contrabando-comprar","colete")
+	elseif data == "utilidades-comprar-alicate" then
+		TriggerServerEvent("contrabando-comprar","alicate")
 	elseif data == "utilidades-comprar-placa" then
 		TriggerServerEvent("contrabando-comprar","placa")
 

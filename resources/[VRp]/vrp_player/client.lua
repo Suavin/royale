@@ -45,38 +45,50 @@ RegisterCommand("attachs",function(source,args)
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_COMBATPDW"),GetHashKey("COMPONENT_AT_AR_FLSH"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_COMBATPDW"),GetHashKey("COMPONENT_AT_SCOPE_SMALL"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_COMBATPDW"),GetHashKey("COMPONENT_AT_AR_AFGRIP"))
-	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_PUMPSHOTGUN_MK2") then
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN_MK2"),GetHashKey("COMPONENT_AT_SIGHTS"))
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN_MK2"),GetHashKey("COMPONENT_AT_SCOPE_SMALL_MK2"))
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN_MK2"),GetHashKey("COMPONENT_AT_AR_FLSH"))
+	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_PUMPSHOTGUN") then
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN"),GetHashKey("COMPONENT_AT_AR_FLSH"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN"),GetHashKey("COMPONENT_AT_SR_SUPP"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PUMPSHOTGUN"),GetHashKey("COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_CARBINERIFLE") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_CARBINERIFLE"),GetHashKey("COMPONENT_AT_AR_FLSH"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_CARBINERIFLE"),GetHashKey("COMPONENT_AT_SCOPE_MEDIUM"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_CARBINERIFLE"),GetHashKey("COMPONENT_AT_AR_AFGRIP"))
+	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_SPECIALCARBINE") then
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_SPECIALCARBINE_CLIP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_AT_AR_FLSH"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_AT_SCOPE_MEDIUM"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_AT_AR_SUPP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_AT_AR_AFGRIP"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_SPECIALCARBINE"),GetHashKey("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_MICROSMG") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_MICROSMG"),GetHashKey("COMPONENT_AT_PI_FLSH"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_MICROSMG"),GetHashKey("COMPONENT_AT_SCOPE_MACRO"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_MICROSMG"),GetHashKey("COMPONENT_AT_AR_SUPP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_MICROSMG"),GetHashKey("COMPONENT_MICROSMG_CLIP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_MICROSMG"),GetHashKey("COMPONENT_MICROSMG_VARMOD_LUXE"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_ASSAULTRIFLE") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_AT_AR_FLSH"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_AT_SCOPE_MACRO"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_AT_AR_AFGRIP"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_AT_AR_SUPP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_ASSAULTRIFLE_CLIP_02"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTRIFLE"),GetHashKey("COMPONENT_ASSAULTRIFLE_VARMOD_LUXE"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_PISTOL_MK2") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_RAIL"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_FLSH_02"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_COMP"))
-	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_PISTOL_MK2") then
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_RAIL"))
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_FLSH_02"))
-		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_AT_PI_COMP"))
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL_MK2"),GetHashKey("COMPONENT_PISTOL_MK2_CAMO_IND_01_SLIDE"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_ASSAULTSMG") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTSMG"),GetHashKey("COMPONENT_AT_AR_FLSH"))
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_ASSAULTSMG"),GetHashKey("COMPONENT_AT_SCOPE_MACRO"))
+	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_GUSENBERG") then
+		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_GUSENBERG"),GetHashKey("COMPONENT_GUSENBERG_CLIP_02"))
 	elseif GetSelectedPedWeapon(ped) == GetHashKey("WEAPON_PISTOL") then
 		GiveWeaponComponentToPed(ped,GetHashKey("WEAPON_PISTOL"),GetHashKey("COMPONENT_AT_PI_FLSH"))
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
--- CANCELANDO O F6
+-- CLONE PLATE
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNetEvent('cloneplates')
 AddEventHandler('cloneplates',function()
@@ -779,4 +791,215 @@ Citizen.CreateThread(function()
 			TriggerServerEvent("aztec:inventory")
 		end
 	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- AGACHAR
+-----------------------------------------------------------------------------------------------------------------------------------------
+local agachar = false
+local movimento = false
+Citizen.CreateThread( function()
+    while true do 
+        Citizen.Wait(1)
+        local ped = PlayerPedId()
+        if DoesEntityExist(ped) and not IsEntityDead(ped) then 
+            if not IsPauseMenuActive() then 
+                if IsPedJumping(ped) then
+			        movimento = false
+			    end
+			end
+		end
+        if DoesEntityExist(ped) and not IsEntityDead(ped) then 
+            DisableControlAction(0,36,true)  
+            if not IsPauseMenuActive() then 
+                if IsDisabledControlJustPressed(0,36) then 
+                    RequestAnimSet("move_ped_crouched")
+                    RequestAnimSet("move_ped_crouched_strafing")
+                    if agachar == true then 
+                        ResetPedMovementClipset(ped,0.55)
+                        ResetPedStrafeClipset(ped)
+                        movimento = false
+                        agachar = false 
+                    elseif agachar == false then
+                        SetPedMovementClipset(ped,"move_ped_crouched",0.55)
+                        SetPedStrafeClipset(ped,"move_ped_crouched_strafing")
+                        agachar = true 
+                    end 
+                end
+            end 
+        end 
+    end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- VIDA BAIXA
+-----------------------------------------------------------------------------------------------------------------------------------------
+Citizen.CreateThread(function()
+	while true do
+		local ped = PlayerPedId()
+		local vida = GetEntityHealth(PlayerPedId())
+		Citizen.Wait(1)
+		if vida <= 251 and vida >= 201 and not agachar then
+			RequestAnimSet("move_injured_generic")     
+      		SetPedMovementClipset(ped,"move_injured_generic",true)			
+		elseif vida <= 200 and vida >= 151 and not agachar then
+			RequestAnimSet("move_heist_lester")  
+      		SetPedMovementClipset(ped,"move_heist_lester",true)			
+		elseif vida <= 150 and vida >= 101 and not agachar then
+			RequestAnimSet("MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP") 
+      		SetPedMovementClipset(ped,"MOVE_M@DRUNK@MODERATEDRUNK_HEAD_UP",true)			
+		elseif vida <= 400  and vida >= 251 and not agachar and not movimento then
+			ResetPedMovementClipset(ped,0.0)			
+		end
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- ANDAR
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand("homem",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@confident")
+end)
+
+RegisterCommand("mulher",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@heels@c")
+end)
+
+RegisterCommand("depressivo",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@depressed@a")
+end)
+
+RegisterCommand("depressiva",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@depressed@a")
+end)
+
+RegisterCommand("empresario",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@business@a")
+end)
+
+RegisterCommand("determinado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@brave@a")
+end)
+
+RegisterCommand("descontraido",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@casual@a")
+end)
+
+RegisterCommand("farto",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@fat@a")
+end)
+
+RegisterCommand("estiloso",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@hipster@a")
+end)
+
+RegisterCommand("ferido",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@injured")
+end)
+
+RegisterCommand("nervoso",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@hurry@a")
+end)
+
+RegisterCommand("desleixado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@hobo@a")
+end)
+
+RegisterCommand("infeliz",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@sad@a")
+end)
+
+RegisterCommand("musculoso",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@muscle@a")
+end)
+
+RegisterCommand("desligado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@shadyped@a")
+end)
+
+RegisterCommand("fadiga",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@buzzed")
+end)
+
+RegisterCommand("apressado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@hurry_butch@a")
+end)
+
+RegisterCommand("descolado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@money")
+end)
+
+RegisterCommand("piriguete",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@maneater")
+end)
+
+RegisterCommand("petulante",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@sassy")
+end)
+
+RegisterCommand("arrogante",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@arrogant@a")
+end)
+
+RegisterCommand("bebado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@drunk@slightlydrunk")
+end)
+
+RegisterCommand("bebado2",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@drunk@verydrunk")
+end)
+
+RegisterCommand("bebado3",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@drunk@moderatedrunk")
+end)
+
+RegisterCommand("irritado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@fire")
+end)
+
+RegisterCommand("intimidado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_m@intimidation@cop@unarmed")
+end)
+
+RegisterCommand("poderosa",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@handbag")
+end)
+
+RegisterCommand("chateado",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@injured")
+end)
+
+RegisterCommand("estilosa",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@posh@")
+end)
+
+RegisterCommand("sensual",function(source,args)
+	movimento = true
+	vRP.loadAnimSet("move_f@sexy@a")
 end)

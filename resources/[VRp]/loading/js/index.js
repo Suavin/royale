@@ -41,7 +41,7 @@ var playlist;
 var tracks;
 var current;
 
-var musicarr = ["http://forum.royaleroleplay.com.br/musicas/celine.mp3"];
+var musicarr = ["http://forum.royaleroleplay.com.br/musicas/audio1.mp3"];
 shuffle(musicarr);
 
 init();

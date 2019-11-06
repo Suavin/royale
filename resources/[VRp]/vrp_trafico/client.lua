@@ -6,8 +6,8 @@ func = Tunnel.getInterface("vrp_trafico")
 -----------------------------------------------------------------------------------------------------------------------------------------
 local Teleport = {
 	["TRAFICO01"] = {
-		positionFrom = { ['x'] = -3033.40, ['y'] = 3333.93, ['z'] = 10.27, ['perm'] = "entrada.permissao" },
-		positionTo = { ['x'] = 894.49, ['y'] = -3245.88, ['z'] = -98.25, ['perm'] = "entrada.permissao" }
+		positionFrom = { ['x'] = -897.14, ['y'] = -1446.59, ['z'] = 7.52, ['perm'] = "entrada.permissao" },
+		positionTo = { ['x'] = -893.95, ['y'] = -1441.09, ['z'] = 7.52, ['perm'] = "entrada.permissao" }
 	}
 }
 
@@ -50,16 +50,16 @@ local processo = false
 -- LOCAIS
 -----------------------------------------------------------------------------------------------------------------------------------------
 local locais = {
-	{ ['id'] = 1, ['x'] = 114.38, ['y'] = 6355.56, ['z'] = 32.31, ['text'] = "Reagentes", ['perm'] = "maconha.permissao" }, -- maconha
-	{ ['id'] = 2, ['x'] = 102.92, ['y'] = 6353.97, ['z'] = 31.37, ['text'] = "Preparo", ['perm'] = "maconha.permissao" }, -- maconha
+	{ ['id'] = 1, ['x'] = 114.38, ['y'] = 6355.56, ['z'] = 32.31, ['text'] = "Reagentes", ['perm'] = "cartel.permissao" }, -- maconha
+	{ ['id'] = 2, ['x'] = 102.92, ['y'] = 6353.97, ['z'] = 31.37, ['text'] = "Preparo", ['perm'] = "cartel.permissao" }, -- maconha
 	{ ['id'] = 3, ['x'] = 113.43, ['y'] = 6360.16, ['z'] = 33.19, ['text'] = "Maconha", ['perm'] = "maconha.permissao" }, -- maconha
 	
-	{ ['id'] = 4, ['x'] = 1505.47, ['y'] = 6391.93, ['z'] = 20.783, ['text'] = "Reagentes", ['perm'] = "meta.permissao" }, -- coca
-	{ ['id'] = 5, ['x'] = 1493.10, ['y'] = 6390.25, ['z'] = 21.25, ['text'] = "Preparo", ['perm'] = "meta.permissao" }, -- coca
+	{ ['id'] = 4, ['x'] = 1505.47, ['y'] = 6391.93, ['z'] = 20.783, ['text'] = "Reagentes", ['perm'] = "cartel.permissao" }, -- coca
+	{ ['id'] = 5, ['x'] = 1493.10, ['y'] = 6390.25, ['z'] = 21.25, ['text'] = "Preparo", ['perm'] = "cartel.permissao" }, -- coca
 	{ ['id'] = 6, ['x'] = 1494.74, ['y'] = 6395.36, ['z'] = 20.78, ['text'] = "Cocaina", ['perm'] = "meta.permissao" }, -- coca
 	
-	{ ['id'] = 7, ['x'] = 2197.85, ['y'] = 5603.68, ['z'] = 53.48, ['text'] = "Reagentes", ['perm'] = "coca.permissao" }, -- meta
-	{ ['id'] = 8, ['x'] = 2195.67, ['y'] = 5594.35, ['z'] = 53.76, ['text'] = "Preparo", ['perm'] = "coca.permissao" }, -- meta
+	{ ['id'] = 7, ['x'] = 2197.85, ['y'] = 5603.68, ['z'] = 53.48, ['text'] = "Reagentes", ['perm'] = "cartel.permissao" }, -- meta
+	{ ['id'] = 8, ['x'] = 2195.67, ['y'] = 5594.35, ['z'] = 53.76, ['text'] = "Preparo", ['perm'] = "cartel.permissao" }, -- meta
 	{ ['id'] = 9, ['x'] = 2191.78, ['y'] = 5598.44, ['z'] = 53.71, ['text'] = "Metanfetamina", ['perm'] = "coca.permissao" }, -- meta
 
 	{ ['id'] = 10, ['x'] = 889.54, ['y'] = -2099.56, ['z'] = 35.59, ['text'] = "CAPSULA", ['perm'] = "motoclub.permissao" }, -- motoclub

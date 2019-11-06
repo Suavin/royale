@@ -16,9 +16,9 @@ local dinheirosujo = {}
 -- LOCALIDADES
 -----------------------------------------------------------------------------------------------------------------------------------------
 local caixas = {
-	[1] = { ['seconds'] = 40 },
-	[2] = { ['seconds'] = 25 },
-	[3] = { ['seconds'] = 160 }
+	[1] = { ['seconds'] = 45 },
+	[2] = { ['seconds'] = 35 },
+	[3] = { ['seconds'] = 170 }
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CHECKROBBERY
@@ -30,7 +30,7 @@ function func.checkRobbery(id,x,y,z,head)
 	if user_id then
 		if #policia < 6 then
 			TriggerClientEvent("Notify",source,"aviso","Número insuficiente de policiais no momento.")
-		elseif (os.time()-timers) <= 1800 then
+		elseif (os.time()-timers) <= 12800 then
 			TriggerClientEvent("Notify",source,"aviso","Os caixas estão vazios, aguarde <b>"..vRP.format(parseInt((1800-(os.time()-timers)))).." segundos</b> até que os civis depositem dinheiro.")
 		else
 			andamento = true

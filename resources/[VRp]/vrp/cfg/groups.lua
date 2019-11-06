@@ -23,7 +23,11 @@ cfg.groups = {
 		"wl.permissao",
 		"apreender.veiculo"
 	},
-    ["conce"] = {
+	["Concessionaria"] = {
+		_config = {
+			title = "Concessionaria",
+			gtype = "job"
+		},
 		"conce.permissao"
 	},
 	["ComandoPolicia"] = {
@@ -206,7 +210,8 @@ cfg.groups = {
 			title = "Yakuza",
 			gtype = "job"
 		},
-		"yakuza.permissao"
+		"yakuza.permissao",
+		"entrada.permissao"
 	},
 	["Bennys"] = {
 		_config = {
@@ -215,32 +220,24 @@ cfg.groups = {
 		},
 		"tuning.permissao"
 	},
-	["Tequilala"] = {
+	["Vanila"] = {
 		_config = {
-			title = "Tequilala",
+			title = "Vanila",
 			gtype = "job"
 		},
-		"tequilala.permissao"
+		"vanila.permissao"
 	},
-	["Roxos"] = {
+	["Crips"] = {
 		_config = {
-			title = "Roxos",
-			gtype = "job"
-		},
-		"trafico.permissao",
-		"maconha.permissao"
-	},
-	["Verdes"] = {
-		_config = {
-			title = "Verdes",
+			title = "Crips Gang",
 			gtype = "job"
 		},
 		"trafico.permissao",
 		"meta.permissao"
 	},
-	["Amarelos"] = {
+	["Bloods"] = {
 		_config = {
-			title = "Amarelos",
+			title = "Bloods Gang",
 			gtype = "job"
 		},
 		"trafico.permissao",
@@ -248,7 +245,7 @@ cfg.groups = {
 	},
 	["Mafia"] = {
 		_config = {
-			title = "Mafia",
+			title = "Mafia Siliciana",
 			gtype = "job"
 		},
 		"mafia.permissao"

@@ -82,7 +82,7 @@ cfg.vehicle_chest_weights = {
 		["bfinjection"] = 20,
 		["bifta"] = 20,
 		["bodhi2"] = 90,
-		["dubsta3"] = 70,
+		["dubsta3"] = 100,
 		["mesa3"] = 60,
 		["rancherxl"] = 70,
 		["rebel"] = 100,
@@ -356,11 +356,11 @@ cfg.vehicle_chest_weights = {
 cfg.static_chest_types = {
 	["policia"] = {
 		weight = 7000,
-		permissions = { "policia.permissao" }
+		permissions = { "toogle.perm" }
 	},
 	["policia2"] = {
 		weight = 7000,
-		permissions = { "policia.permissao" }
+		permissions = { "tooglen.perm" }
 	},
 	["hospital"] = {
 		weight = 7000,
@@ -378,9 +378,9 @@ cfg.static_chest_types = {
 		weight = 7000,
 		permissions = { "cartel.permissao" }
 	},
-	["tequilala"] = {
+	["vanila"] = {
 		weight = 7000,
-		permissions = { "tequilala.permissao" }
+		permissions = { "vanila.permissao" }
 	},
 	["yakuza"] = {
 		weight = 7000,
@@ -390,32 +390,37 @@ cfg.static_chest_types = {
 		weight = 7000,
 		permissions = { "tuning.permissao" }
 	},
-	["roxos"] = {
-		weight = 7000,
-		permissions = { "maconha.permissao" }
-	},
-	["verdes"] = {
+	["crips"] = {
 		weight = 7000,
 		permissions = { "meta.permissao" }
 	},
-	["amarelos"] = {
+	["bloods"] = {
 		weight = 7000,
 		permissions = { "coca.permissao" }
+	},
+	["motoclubbar"] = {
+		weight = 3000,
+		permissions = { "motoclub.permissao" }
+	},
+	["css"] = {
+		weight = 7000,
+		permissions = { "conce.permissao" }
 	}
 }
 cfg.static_chests = {
 	{ "policia",478.02,-989.46,24.91 },
 	{ "policia2",-442.03,5987.52,31.72 },
-	{ "hospital",310.40,-599.46,43.29 },
+	{ "hospital",336.24,-579.82,28.79 },
 	{ "motoclub",883.0,-2107.41,30.78 },
 	{ "mafia",-2679.85,1336.1,144.26 },
-	{ "cartel",-68.10,6255.28,31.09 },
-	{ "tequilala",-571.74,289.14,79.17 },
+	{ "cartel",1700.36,3292.94,48.92 },
+	{ "vanila",106.55,-1299.49,28.76 },
 	{ "bennys",-204.19,-1340.80,34.89 },
 	{ "yakuza",-871.75,-1456.87,7.52 },
-	{ "roxos",106.48,-1964.38,20.87 },
-	{ "verdes",-140.07,-1599.18,34.83 },
-	{ "amarelos",371.59,-2040.85,22.19 }
+	{ "crips",-1146.48,4940.88,222.26 },
+	{ "bloods",1444.50,6334.04,23.84 },
+	{ "motoclubbar",986.79,-92.65,74.84 },
+	{ "css",-30.71,-1110.97,26.42 }
 }
 
 return cfg

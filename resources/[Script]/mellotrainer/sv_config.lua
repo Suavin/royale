@@ -9,13 +9,10 @@ local adminOnlyNoclip = true
 
 local admins = {
 	"license:2f6fd549d134eb59613691b01402db8e7b365b28",  -- Doug
-    "license:c0e783684eab2dba07b09f3de9e81d93da659b29",  -- Bigode
 	"license:8c561ef385cecc526b23e6e5aa3df03fe20b73b0",  -- Koolf
-	"license:3fdbed16c06ec9cb3d37168f3779c6b25deb195e",  -- Nay
 	"license:3a47bd4f197fa9f6102d044672c258366d27a0b2",  -- Snop
-	"license:12389ef5a855a69380ae7d9f5502507d7ea4de77",	-- Hertz
-	"license:48571c9b0ed07960b925b1301dabcd8f5bb11071",	-- Andrei
-    "license:45d18fa2d3541cde4bc32cb1a2d4b8495ffef1e7"  -- PK
+    "license:2e6adc18086d49818e4c58307eee06a400669507" -- Bia
+
 }
 
 --local pvpEnabled = true

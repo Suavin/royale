@@ -45,7 +45,7 @@ Citizen.CreateThread(function()
 		if andamento and tipo == 1 then
 			drawTxt("FALTAM ~g~"..segundos.." SEGUNDOS ~w~PARA TERMINAR DE HACKEAR AS CÂMERAS DE SEGURANÇA",4,0.5,0.93,0.50,255,255,255,180)
 		elseif andamento and tipo == 2 then
-			drawTxt("FALTAM ~g~"..segundos.." SEGUNDOS ~w~PARA TERMINAR DE ROUBAR AS BALCÃO",4,0.5,0.93,0.50,255,255,255,180)
+			drawTxt("FALTAM ~g~"..segundos.." SEGUNDOS ~w~PARA TERMINAR DE ROUBAR O BALCÃO",4,0.5,0.93,0.50,255,255,255,180)
 		end
 	end
 end)
@@ -61,7 +61,7 @@ Citizen.CreateThread(function()
 			local bowz,cdz = GetGroundZFor_3dCoord(v.x,v.y,v.z)
 			local distance = GetDistanceBetweenCoords(v.x,v.y,cdz,x,y,z,true)
 			if distance <= 1.1 and not andamento then
-				drawTxt("PRESSIONE  ~b~F~w~  PARA ROUBAR AS BALCÃO",4,0.5,0.93,0.50,255,255,255,180)
+				drawTxt("PRESSIONE  ~b~F~w~  PARA ROUBAR O BALCÃO",4,0.5,0.93,0.50,255,255,255,180)
 				if IsControlJustPressed(0,75) and not IsPedInAnyVehicle(ped) then
 					if func.returnJewelry() then
 						func.checkJewels(v.id,v.x,v.y,v.z,v.h,2)

@@ -47,20 +47,6 @@ Citizen.CreateThread(function()
   end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
--- BLIP LESTER
------------------------------------------------------------------------------------------------------------------------------------------
-Citizen.CreateThread(function()
-    local blip_l = AddBlipForCoord(1275.682,-1710.426,54.771)
-    SetBlipSprite(blip_l, 77)
-    SetBlipDisplay(blip_l, 8)
-    SetBlipScale(blip_l, 0.3)
-    SetBlipColour(blip_l, 1)
-    SetBlipAsShortRange(blip_l, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentString('Lester')
-    EndTextCommandSetBlipName(blip_l)
-end)
------------------------------------------------------------------------------------------------------------------------------------------
 -- FUNÇÕES
 -----------------------------------------------------------------------------------------------------------------------------------------
 

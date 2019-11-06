@@ -26,8 +26,8 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("departamento-comprar","repairkit")
 	elseif data == "utilidades-comprar-ferramentas" then
 		TriggerServerEvent("departamento-comprar","ferramenta")
-	elseif data == "utilidades-comprar-roupas" then
-		TriggerServerEvent("departamento-comprar","roupas")
+	elseif data == "utilidades-comprar-camarao" then
+		TriggerServerEvent("departamento-comprar","camarao")
 
 	elseif data == "utilidades-vender-isca" then
 		TriggerServerEvent("departamento-vender","isca")
@@ -39,8 +39,8 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("departamento-vender","repairkit")
 	elseif data == "utilidades-vender-ferramentas" then
 		TriggerServerEvent("departamento-vender","ferramenta")
-	elseif data == "utilidades-vender-roupas" then
-		TriggerServerEvent("departamento-comprar","roupas")
+	elseif data == "utilidades-vender-camarao" then
+		TriggerServerEvent("departamento-comprar","camarao")
 
 
 	elseif data == "vestuario-comprar-mochila" then
@@ -108,6 +108,7 @@ local marcacoes = {
 	{ -1820.93,793.18,138.11 },
 	{ 1392.46,3604.95,34.98 },
 	{ -2967.82,390.93,15.04 },
+	{ -1095.50,-2594.56,13.92 },
 	{ -3040.10,585.44,7.90 },
 	{ 1135.56,-982.20,46.41 },
 	{ 1165.91,2709.41,38.15 },

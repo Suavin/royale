@@ -13,7 +13,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('e2', function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"paramedico.permissao") then
+	if vRP.hasPermission(user_id,"paramedico.permissao") or vRP.hasPermission(user_id,"mod.permissao") then
 		local nplayer = vRPclient.getNearestPlayer(source,2)
 		if nplayer then
 			TriggerClientEvent("emotes",nplayer,args[1])

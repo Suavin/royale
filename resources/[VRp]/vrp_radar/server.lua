@@ -27,6 +27,9 @@ function RadarL.checarOrgs()
     elseif vRP.hasGroup(user_id,"Policia") then
         return true
     end
+    elseif vRP.hasGroup(user_id,"PoliciaNorte") then
+        return true
+    end
     return false
 end
 

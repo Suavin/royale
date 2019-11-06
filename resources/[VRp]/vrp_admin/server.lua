@@ -7,7 +7,7 @@ vRPclient = Tunnel.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('dv',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") or vRP.hasPermission(user_id,"ouro.permissao") or vRP.hasPermission(user_id,"platina.permissao") or vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"mecanico.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") or vRP.hasPermission(user_id,"ouro.permissao") or vRP.hasPermission(user_id,"platina.permissao") or vRP.hasPermission(user_id,"polpar.permissao") or vRP.hasPermission(user_id,"mecanico.permissao") then
 		local vehicle = vRPclient.getNearestVehicle(source,7)
 		if vehicle then
 			TriggerClientEvent('deletarveiculo',source,vehicle)
@@ -40,7 +40,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('fix',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		local vehicle = vRPclient.getNearestVehicle(source,7)
 		if vehicle then
 			TriggerClientEvent('reparar',source,vehicle)
@@ -226,7 +226,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('group',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		if args[1] and args[2] then
 			vRP.addUserGroup(parseInt(args[1]),args[2])
 		end
@@ -237,7 +237,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('ungroup',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		if args[1] and args[2] then
 			vRP.removeUserGroup(parseInt(args[1]),args[2])
 		end
@@ -248,7 +248,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('tptome',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		if args[1] then
 			local tplayer = vRP.getUserSource(parseInt(args[1]))
 			local x,y,z = vRPclient.getPosition(source)
@@ -263,7 +263,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('tpto',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		if args[1] then
 			local tplayer = vRP.getUserSource(parseInt(args[1]))
 			if tplayer then
@@ -277,7 +277,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('tpway',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		TriggerClientEvent('tptoway',source)
 	end
 end)
@@ -322,7 +322,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('pon',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"mod.permissao") then
+	if vRP.hasPermission(user_id,"wl.permissao") then
 		local users = vRP.getUsers()
 		local players = ""
 		for k,v in pairs(users) do
@@ -334,8 +334,6 @@ RegisterCommand('pon',function(source,args,rawCommand)
 		TriggerClientEvent('chatMessage',source,"ONLINE",{255,160,0},players)
 	end
 end)
-
-
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- GODALL
 -----------------------------------------------------------------------------------------------------------------------------------------

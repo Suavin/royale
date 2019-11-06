@@ -21,7 +21,7 @@ Citizen.CreateThread(function()
                 table.insert( players, i )
             end
         end
-        SetRichPresence("Jogadores : "..#players.."/105")
+        SetRichPresence("Jogadores : "..#players.."/64")
        -- SetRichPresence(GetPlayerName(PlayerId()) .. " - ".. math.random(10,40) .. " / 128")
     end
 end)

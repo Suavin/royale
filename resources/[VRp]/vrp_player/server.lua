@@ -27,9 +27,13 @@ local itemlist = {
 	["repairkit"] = { index = "repairkit", nome = "Kit de Reparos" },
 	["algemas"] = { index = "algemas", nome = "Algemas" },
 	["capuz"] = { index = "capuz", nome = "Capuz" },
+	["alicate"] = { index = "alicate", nome = "Alicate" },
+	["pills"] = { index = "pills", nome = "Pills" },
+	["pack"] = { index = "pack", nome = "Pack de Drogas" },
 	["lockpick"] = { index = "lockpick", nome = "Lockpick" },
 	["masterpick"] = { index = "masterpick", nome = "Masterpick" },
 	["militec"] = { index = "militec", nome = "Militec-1" },
+	---------------------------------------------------------------------------
 	["carnedecormorao"] = { index = "carnedecormorao", nome = "Carne de Cormorão" },
 	["carnedecorvo"] = { index = "carnedecorvo", nome = "Carne de Corvo" },
 	["carnedeaguia"] = { index = "carnedeaguia", nome = "Carne de Águia" },
@@ -39,7 +43,9 @@ local itemlist = {
 	["carnedelobo"] = { index = "carnedelobo", nome = "Carne de Lobo" },
 	["carnedepuma"] = { index = "carnedepuma", nome = "Carne de Puma" },
 	["carnedejavali"] = { index = "carnedejavali", nome = "Carne de Javali" },
+	---------------------------------------------------------------------------
 	["isca"] = { index = "isca", nome = "Isca" },
+	["camarao"] = { index = "camarao", nome = "Camarãozinho" },
 	["dourado"] = { index = "dourado", nome = "Dourado" },
 	["corvina"] = { index = "corvina", nome = "Corvina" },
 	["salmao"] = { index = "salmao", nome = "Salmão" },
@@ -49,6 +55,16 @@ local itemlist = {
 	["tilapia"] = { index = "tilapia", nome = "Tilápia" },
 	["tucunare"] = { index = "tucunare", nome = "Tucunaré" },
 	["lambari"] = { index = "lambari", nome = "Lambari" },
+	["atum"] = { index = "atum", nome = "Atum" },
+	["espada"] = { index = "espada", nome = "Peixe Espada" },
+	["xareu"] = { index = "xareu", nome = "Xareu" },
+	["tubarao"] = { index = "tubarao", nome = "Tubarão" },
+	["bicuda"] = { index = "bicuda", nome = "Bicuda" },
+	["marlim"] = { index = "marlim", nome = "Marlim Azul" },
+	["tainha"] = { index = "tainha", nome = "Tainha" },
+	["pampo"] = { index = "pampo", nome = "Pampo" },
+	["nero"] = { index = "nero", nome = "Peixe Nero" },
+	---------------------------------------------------------------------------
 	["energetico"] = { index = "energetico", nome = "Energético" },
 	["mochila"] = { index = "mochila", nome = "Mochila" },
 	["maconha"] = { index = "maconha", nome = "Maconha" },
@@ -77,6 +93,7 @@ local itemlist = {
 	["relogioroubado"] = { index = "relogioroubado", nome = "Relógio Roubado" },
 	["pulseiraroubada"] = { index = "pulseiraroubada", nome = "Pulseira Roubada" },
 	["anelroubado"] = { index = "anelroubado", nome = "Anel Roubado" },
+	["diamante"] = { index = "diamante", nome = "Diamante" },
 	["colarroubado"] = { index = "colarroubado", nome = "Colar Roubado" },
 	["brincoroubado"] = { index = "brincoroubado", nome = "Brinco Roubado" },
 	["carteiraroubada"] = { index = "carteiraroubada", nome = "Carteira Roubada" },
@@ -86,6 +103,7 @@ local itemlist = {
 	["vibradorroubado"] = { index = "vibradorroubado", nome = "Vibrador Roubado" },
 	["perfumeroubado"] = { index = "perfumeroubado", nome = "Perfume Roubado" },
 	["maquiagemroubada"] = { index = "maquiagemroubada", nome = "Maquiagem Roubada" },
+    ---------------------------------------------------------------------------
 	["wbody|WEAPON_DAGGER"] = { index = "adaga", nome = "Adaga" },
 	["wbody|WEAPON_BAT"] = { index = "beisebol", nome = "Taco de Beisebol" },
 	["wbody|WEAPON_BOTTLE"] = { index = "garrafa", nome = "Garrafa" },
@@ -114,16 +132,18 @@ local itemlist = {
 	["wbody|WEAPON_MUSKET"] = { index = "winchester22", nome = "Winchester 22" },
 	["wbody|WEAPON_FLARE"] = { index = "sinalizador", nome = "Sinalizador" },
 	["wbody|GADGET_PARACHUTE"] = { index = "paraquedas", nome = "Paraquedas" },
+	["wbody|WEAPON_STICKYBOMB"] = { index = "stickybomb", nome = "Stickybomb" },
 	["wbody|WEAPON_FIREEXTINGUISHER"] = { index = "extintor", nome = "Extintor" },
 	["wbody|WEAPON_MICROSMG"] = { index = "uzi", nome = "Uzi" },
 	["wbody|WEAPON_SMG"] = { index = "mp5", nome = "MP5" },
 	["wbody|WEAPON_ASSAULTSMG"] = { index = "mtar21", nome = "MTAR-21" },
 	["wbody|WEAPON_COMBATPDW"] = { index = "sigsauer", nome = "Sig Sauer MPX" },
-	["wbody|WEAPON_PUMPSHOTGUN_MK2"] = { index = "remington", nome = "Remington 870" },
+	["wbody|WEAPON_PUMPSHOTGUN"] = { index = "remington", nome = "Remington 870" },
 	["wbody|WEAPON_CARBINERIFLE"] = { index = "m4a1", nome = "M4A1" },
 	["wbody|WEAPON_ASSAULTRIFLE"] = { index = "ak103", nome = "AK-103" },
 	["wbody|WEAPON_GUSENBERG"] = { index = "thompson", nome = "Thompson" },
 	["wammo|WEAPON_PISTOL"] = { index = "m-m1911", nome = "Munição de M1911" },
+	["wammo|WEAPON_STICKYBOMB"] = { index = "m-c4", nome = "Carga C4" },
 	["wammo|WEAPON_PISTOL_MK2"] = { index = "m-fiveseven", nome = "Munição de FN Five Seven" },
 	["wammo|WEAPON_COMBATPISTOL"] = { index = "m-glock", nome = "Munição de Glock 19" },
 	["wammo|WEAPON_APPISTOL"] = { index = "m-vp9", nome = "Munição de Koch VP9" },
@@ -139,7 +159,7 @@ local itemlist = {
 	["wammo|WEAPON_SMG"] = { index = "m-mp5", nome = "Munição de MP5" },
 	["wammo|WEAPON_ASSAULTSMG"] = { index = "m-mtar21", nome = "Munição de MTAR-21" },
 	["wammo|WEAPON_COMBATPDW"] = { index = "m-sigsauer", nome = "Munição de Sig Sauer MPX" },
-	["wammo|WEAPON_PUMPSHOTGUN_MK2"] = { index = "m-remington", nome = "Munição de Remington 870" },
+	["wammo|WEAPON_PUMPSHOTGUN"] = { index = "m-remington", nome = "Munição de Remington 870" },
 	["wammo|WEAPON_CARBINERIFLE"] = { index = "m-m4a1", nome = "Munição de M4A1" },
 	["wammo|WEAPON_ASSAULTRIFLE"] = { index = "m-ak103", nome = "Munição de AK-103" },
 	["wammo|WEAPON_GUSENBERG"] = { index = "m-thompson", nome = "Munição de Thompson" },
@@ -204,6 +224,7 @@ local salarios = {
 	{ ['permissao'] = "platina.permissao", ['nome'] = "PLATINA", ['payment'] = 700 },
 	{ ['permissao'] = "policia.permissao", ['nome'] = "POLICIA", ['payment'] = 2100 },
 	{ ['permissao'] = "paramedico.permissao", ['nome'] = "PARAMEDICO", ['payment'] = 2100 },
+	{ ['permissao'] = "conce.permissao", ['nome'] = "Concessionaria", ['payment'] = 1900 },
 	{ ['permissao'] = "news.permissao", ['nome'] = "RoyaleNews", ['payment'] = 1900 },
 	{ ['permissao'] = "mecanico.permissao", ['nome'] = "MECANICO", ['payment'] = 1900 },
 	{ ['permissao'] = "judiciario.permissao", ['nome'] = "JUDICIARIO", ['payment'] = 1900 },
@@ -339,6 +360,7 @@ RegisterCommand('rg', function(source, args, rawCommand)
     local registration = identity.registration
     local age = identity.age
     local money = vRP.getMoney(user_id)
+    local bank = vRP.getBankMoney(user_id)
     local phone = identity.phone
     local idplayer = identity.user_id
     local multas = vRP.getUData(user_id, "vRP:Multas") 
@@ -346,7 +368,7 @@ RegisterCommand('rg', function(source, args, rawCommand)
     local paypal = vRP.getUData(user_id,"vRP:paypal")
     local mypaypal = json.decode(paypal) or 0
 
-    vRPclient.setDiv(source,"completerg",".div_completerg { background-color: rgba(0,0,0,0.60); font-size: 13px; font-family: arial; color: #fff; width: 420px; padding: 20px 20px 5px; bottom: 20%; right: 0.5%; position: absolute; border: 1px solid rgba(255,255,255,0.2); letter-spacing: 0.5px; } .local { width: 220px; padding-bottom: 15px; float: left; } .local2 { width: 200px; padding-bottom: 15px; float: left; } .local b, .local2 b { color: #99cc00; }","<div class=\"local\"><b>Nome:</b> "..firstname.." "..name.." (ID: "..idplayer..")</div><div class=\"local2\"><b>Identidade:</b> "..registration.."</div><div class=\"local\"><b>Idade:</b> "..age.." Anos</div><div class=\"local2\"><b>Telefone:</b> "..phone.."</div><div class=\"local\"><b>Multas:</b> $"..mymultas.."</div><div class=\"local2\"><b>Carteira:</b> $"..money.."</div><div class=\"local\"><b>Emprego:</b> "..groupname.."</div><div class=\"local2\"><b>Paypal:</b> $"..mypaypal.."</div>")
+    vRPclient.setDiv(source,"completerg",".div_completerg { background-color: rgba(0,0,0,0.60); font-size: 13px; font-family: arial; color: #fff; width: 420px; padding: 20px 20px 5px; bottom: 20%; right: 0.5%; position: absolute; border: 1px solid rgba(255,255,255,0.2); letter-spacing: 0.5px; } .local { width: 220px; padding-bottom: 15px; float: left; } .local2 { width: 200px; padding-bottom: 15px; float: left; } .local b, .local2 b { color: #99cc00; }","<div class=\"local\"><b>Nome:</b> "..firstname.." "..name.." (ID: "..idplayer..")</div><div class=\"local2\"><b>Paypal:</b> $"..mypaypal.."</div><div class=\"local\"><b>Idade:</b> "..age.." Anos</div><div class=\"local2\"><b>Telefone:</b> "..phone.."</div><div class=\"local\"><b>Multas:</b> $"..mymultas.."</div><div class=\"local2\"><b>Carteira:</b> $"..money.."</div><div class=\"local\"><b>Emprego:</b> "..groupname.."</div><div class=\"local2\"><b>Banco:</b> $"..bank.."</div>")
     if vRP.request(source,"Deseja fechar o seu RG?",900) then
         vRPclient.removeDiv(source, "completerg")
     else
@@ -651,7 +673,9 @@ RegisterCommand('call',function(source,args,rawCommand)
 		elseif args[1] == "mec" then
 			players = vRP.getUsersByPermission("mecanico.permissao")
 		elseif args[1] == "adm" then
-			players = vRP.getUsersByPermission("mod.permissao")
+			players = vRP.getUsersByPermission("wl.permissao")
+		elseif args[1] == "css" then
+			players = vRP.getUsersByPermission("conce.permissao")
 		elseif args[1] == "juiz" then
 			players = vRP.getUsersByPermission("juiz.permissao")
 		elseif args[1] == "taxi" then
@@ -677,7 +701,7 @@ RegisterCommand('call',function(source,args,rawCommand)
 				async(function()
 					vRPclient.playSound(player,"Out_Of_Area","DLC_Lowrider_Relay_Race_Sounds")
 					TriggerClientEvent('chatMessage',player,"CHAMADO",{19,197,43},"Enviado por ^1"..identitys.name.." "..identitys.firstname.." - "..identitys.user_id.."^0, "..descricao)
-					local ok = vRP.request(player,"Aceitar o chamado de <b>"..identitys.name.." "..identitys.firstname.." - "..identitys.user_id.."</b>?",30)
+					local ok = vRP.request(player,"Aceitar o chamado de <b>"..identitys.name.." "..identitys.firstname.."  ("..identitys.user_id..")</b>?",30)
 					if ok then
 						if not answered then
 							answered = true
@@ -696,6 +720,72 @@ RegisterCommand('call',function(source,args,rawCommand)
 				end)
 			end
 		end
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- MASCARA
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('mascara',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+	TriggerClientEvent('mascara',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de calça.")
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- OCULOS
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('oculos',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+	TriggerClientEvent('oculos',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de calça.")
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- CHAPEU
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('chapeu',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+	TriggerClientEvent('chapeu',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de calça.")
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- MAOS
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('maos',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+	TriggerClientEvent('maos',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de calça.")
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- ACESSORIO
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('acessorios',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+		TriggerClientEvent('acessorios',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de acessórios.")
+	end
+end)
+-------------------------------------------------------------------------------------------------------------------------------------------
+---- SAPATO
+-------------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('sapatos',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.getInventoryItemAmount(user_id,"roupas") >= 1 then
+		TriggerClientEvent('sapatos',source,args[1],args[2])
+	else
+		TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Você precisa de ^1Roupas ^0para mudar de sapatos.")
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -750,7 +840,19 @@ RegisterCommand('112',function(source,args,rawCommand)
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
--- 112
+-- css
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('css',function(source,args,rawCommand)
+	if args[1] then
+		local user_id = vRP.getUserId(source)
+		local identity = vRP.getUserIdentity(user_id)
+		if user_id then
+			TriggerClientEvent('chatMessage',-1,identity.name.." "..identity.firstname,{255,225,135},rawCommand:sub(4))
+		end
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- Mec
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('mec',function(source,args,rawCommand)
 	if args[1] then
