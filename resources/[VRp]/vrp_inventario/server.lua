@@ -140,7 +140,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
     if vRPclient.isInComa(player) then
         TriggerClientEvent("Notify",player,"negado","Você está em coma.",1)
     else
-        if type == "drink" or type == "food" or type == "heal" or type == "weapon" or type == "ammo" or type == "mochila" or type == "armor" or type == "maconha" or type == "cocaina"or type == "metanfetamina" or type == "vodka" or type == "money" or type == "energetico" or type == "capuz" or type == "bandagem" or type == "documento" then
+        if type == "drink" or type == "food" or type == "heal" or type == "weapon" or type == "ammo" or type == "mochila" or type == "armor" or type == "maconha" or type == "cocaina"or type == "metanfetamina" or type == "alcool" or type == "money" or type == "energetico" or type == "capuz" or type == "bandagem" or type == "documento" then
             if type == "bandagem" then
                 vida = vRPclient.getHealth(player)
                 if vida > 100 and vida < 400 then
@@ -278,6 +278,8 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
                     vRPclient._stopAnim(player,false) -- full
                     IClient.playMovement(player,"MOVE_M@DRUNK@SLIGHTLYDRUNK",true,true,false,false)
                     IClient.playScreenEffect(player, "DMT_flight", 120)
+                    TriggerClientEvent("vrp_sound:source",'is-this-love',0.5)
+                   
                     --vRPclient.varyHealth(player,25)
                     vRP.varyHunger(user_id,20)
                     vRP.varyThirst(user_id,10)
@@ -316,7 +318,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
                     end)
                   end
             end
-            if type == "vodka" then 
+            if type == "alcool" then 
                 if vRP.tryGetInventoryItem(user_id,"smirnoff",1,false) then
                     TriggerClientEvent("Notify",player,"aviso","Bebendo Smirnoff.")
                     play_drink(player)

@@ -13,5 +13,7 @@ files {
 	"html/sounds/lock.ogg",
 	"html/sounds/cuff.ogg",
 	"html/sounds/uncuff.ogg",
-	"html/sounds/heartbeat.ogg"
+	"html/sounds/heartbeat.ogg",
+	"html/sounds/is-this-love.ogg"
+	
 }
