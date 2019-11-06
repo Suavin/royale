@@ -269,8 +269,8 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
             end
             
             if type == "maconha" then
-                if vRP.tryGetInventoryItem(user_id,"maconha",1,false) then
-                    TriggerClientEvent("Notify",player,"aviso","Fumando Maconha.")
+                if vRP.tryGetInventoryItem(user_id,idname,1,false) then
+                    TriggerClientEvent("Notify",player,"aviso","Fumando "..vRP.getItemName(idname)..".")
                     play_f1(player)
 
                     SetTimeout(10000,function()
@@ -291,7 +291,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
                 end
             end
             if type == "cocaina" then
-                if vRP.tryGetInventoryItem(user_id,"cocaina",1,false) then
+                if vRP.tryGetInventoryItem(user_id,idname,1,false) then
                     TriggerClientEvent("Notify",player,"aviso","Cheirando Cocaina.")
                     play_drink(player)
                     SetTimeout(10000,function()
@@ -305,7 +305,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
                 end
             end
             if type == "metanfetamina" then
-                if vRP.tryGetInventoryItem(user_id,"metanfetamina",1,false) then
+                if vRP.tryGetInventoryItem(user_id,idname,1,false) then
                     TriggerClientEvent("Notify",player,"aviso","Injetando Metanfetamina.")
                     play_drink(player)
                     SetTimeout(10000,function()
@@ -319,7 +319,7 @@ function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHung
                   end
             end
             if type == "alcool" then 
-                if vRP.tryGetInventoryItem(user_id,"smirnoff",1,false) then
+                if vRP.tryGetInventoryItem(user_id,idname,1,false) then
                     TriggerClientEvent("Notify",player,"aviso","Bebendo Smirnoff.")
                     play_drink(player)
                     SetTimeout(5000,function()
