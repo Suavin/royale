@@ -66,8 +66,12 @@ local itemlist = {
 	["nero"] = { index = "nero", nome = "Peixe Nero" },
 	---------------------------------------------------------------------------
 	["energetico"] = { index = "energetico", nome = "Energético" },
+	["iene"] = { index = "iene", nome = "Ienes" },
 	["mochila"] = { index = "mochila", nome = "Mochila" },
 	["maconha"] = { index = "maconha", nome = "Maconha" },
+	["dryice"] = { index = "dryice", nome = "Dry Ice" },
+	["superlemon"] = { index = "superlemon", nome = "Super Lemon" },
+	["purplebud"] = { index = "purplebud", nome = "Purple Bud" },
 	["placa"] = { index = "placa", nome = "Placa" },
 	["rebite"] = { index = "rebite", nome = "Rebite" },
 	["carbono"] = { index = "carbono", nome = "Carbono" },

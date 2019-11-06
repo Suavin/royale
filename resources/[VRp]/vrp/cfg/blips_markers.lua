@@ -136,7 +136,7 @@ cfg.blips = {
 	{ 985.87,-2121.18,30.47,442,13,"Central | Caçadores",0.5 },
 	{ 1194.86,-3254.85,7.09,477,13,"Central | Caminhoneiros",0.5 },
 	{ -345.36,-1566.49,25.22,318,13,"Central | Lixeiros",0.5 },
-	{ -286.72,-1061.68,27.20,458,13,"Central | Assassinos",0.5 },
+	{ -403.10,6377.61,14.06,458,13,"Central | Assassinos",0.5 },
 	{ -1816.73,-1193.62,14.30,68,13,"Central | Pescadores",0.5 },
 	{ 3807.87,4478.52,6.36,68,13,"Central | Pescadores Marinhos",0.5 },
 	{ 4774.65,5837.03,0.85,68,13,"Pesca Marinha",0.5 },

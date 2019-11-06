@@ -29,9 +29,9 @@ Citizen.CreateThread(function()
 	SetNuiFocus(false,false)
 	while true do
 		Citizen.Wait(1)
-		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-286.51,-1060.50,27.20,true)
+		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-405.65,6375.66,13.99,true)
 		if distance <= 30 then
-			DrawMarker(23,-286.51,-1060.50,27.20-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,20,0,0,0,0)
+			DrawMarker(23,-405.65,6375.66,13.99-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,20,0,0,0,0)
 			if distance <= 1.2 then
 				if IsControlJustPressed(0,38) then
 					ToggleActionMenu()

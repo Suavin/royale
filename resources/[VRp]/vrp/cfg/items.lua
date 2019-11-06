@@ -28,6 +28,7 @@ cfg.items = {
 	["repairkit"] = { "Kit de Reparos",10 },
 	----------------------------------------------
 	["dinheirosujo"] = { "Dinheiro Sujo",0 },
+	["iene"] = { "Ienes",0.5 },
 	["pack"] = { "Pack de Drogas",1.5 },
 	["algemas"] = { "Algemas",1 },
 	["capuz"] = { "Capuz",0.5 },
@@ -77,13 +78,16 @@ cfg.items = {
 	["adubo"] = { "Adubo",0.8 },
 	["fertilizante"] = { "Fertilizante",0.8 },
 	["maconha"] = { "Maconha",0.5 },
+	["dryice"] = { "Dry Ice",0.5 },
+	["superlemon"] = { "Super Lemon",0.5 },
+	["purplebud"] = { "Purple Bud",0.5 },
 	----------------------------------------------
 	["reagentesdemeta"] = { "Reagentes De Metanfetamina",0.8 },
-	["preparodemeta"] = { "Preparo De Metanfetamina",0.8 },
+	["preparodemeta"] = { "Preparo De Metanfetamina",0.05 },
 	["metanfetamina"] = { "Metanfetamina",0.5 },
 	--------------------------------
 	["reagentesdecoca"] = { "Reagentes De Cocaina",0.8 },
-	["preparodecoca"] = { "Preparo De Cocaina",0.8 },
+	["preparodecoca"] = { "Preparo De Cocaina",0.05 },
 	["cocaina"] = { "Cocaina",0.5 },
 	----------------------------------------------
 	["capsula"] = { "Cápsula",0.01 },

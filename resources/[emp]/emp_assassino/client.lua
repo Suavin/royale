@@ -10,9 +10,9 @@ local progress = false
 local segundos = 0
 local selectnpc = nil
 local emservico = false
-local CoordenadaX = -287.29
-local CoordenadaY = -1062.87
-local CoordenadaZ = 27.20
+local CoordenadaX = -400.08
+local CoordenadaY = 6378.19
+local CoordenadaZ = 14.06
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- TRABALHAR
 -----------------------------------------------------------------------------------------------------------------------------------------
