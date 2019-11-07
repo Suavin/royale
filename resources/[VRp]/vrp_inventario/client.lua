@@ -356,3 +356,15 @@ RegisterNetEvent("vrp_inventario:tiraMochila")
 AddEventHandler("vrp_inventario:tiraMochila",function(mochila)
 
 end)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- BANDAGEM
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterNetEvent('bandagem')
+AddEventHandler('bandagem',function()
+  repeat
+    SetEntityHealth(PlayerPedId(),GetEntityHealth(PlayerPedId())+1)
+    Citizen.Wait(600)
+  until GetEntityHealth(PlayerPedId()) >= 400 or GetEntityHealth(PlayerPedId()) <= 100
+    TriggerEvent("Notify","sucesso","Tratamento concluido.")
+end)

@@ -136,6 +136,18 @@ function split(str, sep)
     return array
 end
 
+local bandagem = {}
+Citizen.CreateThread(function()
+    while true do
+        Citizen.Wait(1000)
+        for k,v in pairs(bandagem) do
+            if v > 0 then
+                bandagem[k] = v - 1
+            end
+        end
+    end
+end)
+
 function useItem(user_id, player, idname, type, varyhealth, varyThirst, varyHunger, amount)
     if vRPclient.isInComa(player) then
         TriggerClientEvent("Notify",player,"negado","Você está em coma.",1)
